@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 1 INF-122</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background:radial-gradient(white, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+
+        .cara {
+            width: 300px;
+            height: 300px;
+            border: 3px solid black;
+            border-radius: 50%;
+            margin: 50px auto;
+            position: relative;
+            background:radial-gradient(yellow, orange);
+        }
+
+        /* Estilos de los ojos */
+        .ojo {
+            width: 55px;
+            height: 50px;
+            border: 3px solid black;
+            border-radius: 50%;
+            position: absolute;
+            top: 45%;
+            transform: translateY(-50%);
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .izquierdo {
+            left: 25%;
+        }
+
+        .derecho {
+            right: 25%;
+        }
+
+        .nariz{
+            display: flex;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border: 3px solid black;
+            position: absolute;
+            background:radial-gradient(pink, red);
+            border-radius: 100%;
+            top: 49%;
+            right: 44%;
+        }
+
+        /* Estilos de la boca */
+        .boca {
+            display: flex;
+            justify-content: center;
+            width: 100px;
+            height: 50px;
+            border: 3px solid black;
+            border-bottom: none;
+            border-radius: 10% 10% 80% 80%;
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            background:radial-gradient(pink, red);
+        }
+        .diente{
+            top: -4%;
+            width: 20px;
+            height: 20px;
+            border:  2px solid black;
+            position: relative;
+            /*top: 0%;
+            left: 0%;*/
+            background-color: white;
+            border-top-style:50px  solid white;
+            
+        }
+        .canino{
+            top: -4%;
+            width: 15px;
+            height: 20px;
+            border:  2px solid black;
+            position: relative;
+            background-color: white;
+            clip-path: polygon(50% 100%, 100% 0, 0% 0%)
+        }
+        .punto{
+            top: 40%;
+            width: 20px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: black;
+            border: 3px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cara">
+        <div class="ojo izquierdo">
+            <div class="punto"></div>
+        </div>
+        <div class="ojo derecho">
+            <div class="punto"></div>
+        </div>
+        <div class="nariz"></div>
+        <div class="boca">
+            <div class="canino"></div>
+            <div class="canino"></div>
+            <div class="canino"></div>
+            <div class="canino"></div>
+            <div class="canino"></div>
+        </div>
+    </div>
+</body>
+</html>
