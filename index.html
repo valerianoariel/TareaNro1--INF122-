@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <title>Tarea 1 INF-122</title>
     <style>
-        /* Estilos generales */
         body {
-            background:radial-gradient(white, black);
+            background: linear-gradient(black,red, yellow);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,7 +22,6 @@
             background:radial-gradient(yellow, orange);
         }
 
-        /* Estilos de los ojos */
         .ojo {
             width: 55px;
             height: 50px;
@@ -59,7 +57,6 @@
             right: 44%;
         }
 
-        /* Estilos de la boca */
         .boca {
             display: flex;
             justify-content: center;
@@ -67,25 +64,25 @@
             height: 50px;
             border: 3px solid black;
             border-bottom: none;
-            border-radius: 10% 10% 80% 80%;
+            border-radius: 10% 10% 50% 50%;
             position: absolute;
             bottom: 20%;
             left: 50%;
             transform: translateX(-50%);
             background:radial-gradient(pink, red);
         }
+
         .diente{
             top: -4%;
-            width: 20px;
-            height: 20px;
+            width: 98px;
+            height: 17px;
             border:  2px solid black;
             position: relative;
-            /*top: 0%;
-            left: 0%;*/
             background-color: white;
             border-top-style:50px  solid white;
             
         }
+
         .canino{
             top: -4%;
             width: 15px;
@@ -95,6 +92,7 @@
             background-color: white;
             clip-path: polygon(50% 100%, 100% 0, 0% 0%)
         }
+        
         .punto{
             top: 40%;
             width: 20px;
@@ -116,11 +114,7 @@
         </div>
         <div class="nariz"></div>
         <div class="boca">
-            <div class="canino"></div>
-            <div class="canino"></div>
-            <div class="canino"></div>
-            <div class="canino"></div>
-            <div class="canino"></div>
+            <div class="diente"></div>
         </div>
     </div>
 </body>
